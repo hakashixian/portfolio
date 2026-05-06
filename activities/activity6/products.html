@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="stylesheet" href="style.css">
+    <title>Products</title>
+    <style>
+        /* ===== Products Page ===== */
+        .products {
+            color: white;
+            padding: 60px 40px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        .products h2 {
+            text-align: center;
+            font-size: 42px;
+            letter-spacing: 4px;
+            text-transform: uppercase;
+            margin-bottom: 10px;
+            color: white;
+        }
+
+        .products-subtitle {
+            text-align: center;
+            color: #aaa;
+            font-size: 15px;
+            letter-spacing: 2px;
+            text-transform: uppercase;
+            margin-bottom: 50px;
+        }
+
+        .products-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 30px;
+        }
+
+        .product-card {
+            background: #111;
+            border: 1px solid #222;
+            border-radius: 14px;
+            overflow: hidden;
+            transition: transform 0.3s ease, border-color 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .product-card:hover {
+            transform: translateY(-6px);
+            border-color: crimson;
+            box-shadow: 0 12px 30px rgba(220, 20, 60, 0.2);
+        }
+
+        .product-card img {
+            width: 100%;
+            height: 220px;
+            object-fit: cover;
+            display: block;
+            border-bottom: 1px solid #222;
+            transition: transform 0.4s ease;
+        }
+
+        .product-card:hover img {
+            transform: scale(1.05);
+        }
+
+        .product-card-body {
+            padding: 20px;
+            flex: 1;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        .product-name {
+            font-size: 17px;
+            font-weight: bold;
+            letter-spacing: 1px;
+            margin-bottom: 8px;
+            color: white;
+        }
+
+        .product-price {
+            font-size: 22px;
+            color: crimson;
+            font-weight: bold;
+            margin-bottom: 16px;
+        }
+
+        .product-card button {
+            width: 100%;
+            padding: 12px;
+            font-size: 14px;
+            letter-spacing: 1.5px;
+            text-transform: uppercase;
+            border-radius: 8px;
+        }
+
+        /* ===== Responsive ===== */
+        @media (max-width: 768px) {
+            .products-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+        }
+
+        @media (max-width: 480px) {
+            .products-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+<div class="products">
+    <h2>Our Products</h2>
+    <p class="products-subtitle">Professional tools for every artist</p>
+
+    <div class="products-grid">
+
+        <div class="product-card">
+            <img src="images/kit.jpg" alt="Tattoo Kit">
+            <div class="product-card-body">
+                <div class="product-name">Tattoo Kit</div>
+                <div class="product-price">$120</div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/tatooink.jpg" alt="Tattoo Ink Set">
+            <div class="product-card-body">
+                <div class="product-name">Tattoo Ink Set</div>
+                <div class="product-price">$45</div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/tatooneedles.webp" alt="Tattoo Needle Pack">
+            <div class="product-card-body">
+                <div class="product-name">Tattoo Needle Pack</div>
+                <div class="product-price">$30</div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/OIP.webp" alt="Aftercare Cream">
+            <div class="product-card-body">
+                <div class="product-name">Aftercare Cream</div>
+                <div class="product-price">$25</div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/stencil.webp" alt="Stencil Paper">
+            <div class="product-card-body">
+                <div class="product-name">Stencil Paper</div>
+                <div class="product-price">$10</div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+        <div class="product-card">
+            <img src="images/gloves.webp" alt="Gloves Pack">
+            <div class="product-card-body">
+                <div class="product-name">Gloves Pack</div>
+                <div class="product-price">$15</div>
+                <button>Buy Now</button>
+            </div>
+        </div>
+
+    </div>
+</div>
+
+</body>
+</html>

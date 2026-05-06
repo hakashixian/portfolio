@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Humphrey Ian G. Pacaña — Portfolio</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Humphrey <span>Ian G. Pacaña</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <section class="hero">
+    <div class="hero-bg-circles">
+      <div class="circle c1"></div>
+      <div class="circle c2"></div>
+      <div class="circle c3"></div>
+    </div>
+    <div class="hero-content">
+      <div class="hero-text">
+        <p class="hero-eyebrow">Welcome to my portfolio</p>
+        <h1 class="hero-title">Hi, I'm <span class="accent">Humphrey Ian G. Pacaña</span></h1>
+        <p class="hero-subtitle">Computer Science Student · Tech Enthusiast</p>
+        <p class="hero-desc">Passionate about technology and problem-solving, currently building skills in programming and software development at CIT-U.</p>
+        <div class="hero-cta">
+          <a href="about.html" class="btn btn-primary">Learn About Me</a>
+          <a href="contact.html" class="btn btn-outline">Get in Touch</a>
+        </div>
+      </div>
+      <div class="hero-card">
+        <div class="card-inner">
+          <div class="card-school">
+            <span class="card-school-icon">🎓</span>
+            <div>
+              <p class="card-school-name">CIT-U</p>
+              <p class="card-school-sub">BS Computer Science</p>
+            </div>
+          </div>
+          <div class="card-divider"></div>
+          <p class="card-quote">"if it's meant to be,<br/>then it will be"<br/><em>— Ethel Cain</em></p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="quick-nav">
+    <a href="about.html" class="qnav-card">
+      <span class="qnav-icon">👤</span>
+      <h3>About Me</h3>
+      <p>My story, background, and what drives me.</p>
+      <span class="qnav-arrow">→</span>
+    </a>
+    <a href="education.html" class="qnav-card">
+      <span class="qnav-icon">🎓</span>
+      <h3>Education</h3>
+      <p>Schools and courses I've attended.</p>
+      <span class="qnav-arrow">→</span>
+    </a>
+    <a href="portfolio.html" class="qnav-card">
+      <span class="qnav-icon">💼</span>
+      <h3>Portfolio</h3>
+      <p>Projects I've built and worked on.</p>
+      <span class="qnav-arrow">→</span>
+    </a>
+    <a href="contact.html" class="qnav-card">
+      <span class="qnav-icon">✉️</span>
+      <h3>Contact</h3>
+      <p>Let's connect or collaborate.</p>
+      <span class="qnav-arrow">→</span>
+    </a>
+  </section>
+
+  <footer class="footer">
+    <p>© 2026 Humphrey Ian G. Pacaña · Built with passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

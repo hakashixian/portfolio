@@ -1,0 +1,241 @@
+/* ===== Body & Global Styles ===== */
+body {
+    margin: 0;                          /* Removes default white space around the page edges */
+    background-color: #0b0b0b;          /* Near-black background — matches the dark skull image */
+    color: white;                       /* Default text color for the whole site */
+    font-family: 'Georgia', serif;      /* Changed: Georgia serif fits the dark tattoo theme better than Arial */
+}
+
+/* ===== Header ===== */
+.header {
+    background-color: #0b0b0b;          /* Keeps header dark to match the skull image background */
+    border-bottom: 2px solid #8b0000;   /* Added: dark blood-red line separating header from nav */
+}
+
+/* ===== Navigation ===== */
+#nav, nav {
+    background-color: #0d0d0d;          /* Slightly lighter than pure black for subtle depth */
+    text-align: center;                 /* Centers the nav links horizontally */
+    padding: 15px 0;                    /* Adds space above and below the nav links */
+    border-bottom: 2px solid #8b0000;   /* Added: dark red border under nav — matches rose/blood theme */
+    letter-spacing: 2px;               /* Added: spreads nav letters out for an elegant feel */
+}
+
+#nav a, nav a {
+    color: #e8d5b7;                     /* Changed: warm bone/parchment tone — matches skull colors in image */
+    text-decoration: none;              /* Removes underline from links */
+    margin: 0 30px;                     /* Adds horizontal space between each nav link */
+    font-weight: bold;                  /* Makes nav text bold */
+    font-family: 'Georgia', serif;      /* Changed: serif font matches the ornate tattoo art style */
+    font-size: 18px;                    /* Sets the nav link text size */
+    text-transform: uppercase;          /* Added: all caps gives it a strong, gothic feel */
+}
+
+#nav a:hover, nav a:hover {
+    color: #dc143c;                     /* Changed: crimson red on hover — matches the roses in the image */
+    text-shadow: 0 0 8px rgba(220, 20, 60, 0.6); /* Added: red glow on hover for dramatic effect */
+}
+
+/* ===== Main Content ===== */
+.main {
+    background-color: black;
+    width: 100%;
+    height: calc(100vh - 50px); /* fills screen minus navbar height */
+    color: white;
+}
+
+/* ===== Footer ===== */
+.footer {
+    background-color: #0d0d0d;          /* Slightly off-black footer background */
+    padding: 15px 0;                    /* Vertical spacing inside the footer */
+    text-align: center;                 /* Centers footer text */
+    font-family: 'Georgia', serif;      /* Changed: matches the site's new serif font */
+    color: #e8d5b7;                     /* Changed: bone/parchment tone to match nav links */
+    border-top: 2px solid #8b0000;      /* Added: dark red top border mirrors the nav border */
+    position: fixed;                    /* Keeps footer stuck to the bottom of the screen */
+    bottom: 0;                          /* Anchors it to the very bottom */
+    width: 100%;                        /* Stretches footer across the full page width */
+    letter-spacing: 1px;               /* Added: slight letter spacing for a refined look */
+}
+
+/* ===== Home & Other Pages ===== */
+.home2 {
+    color: white;                       /* White text for home content */
+    text-align: center;                 /* Centers home page text */
+}
+
+.products {
+    color: white;                       /* White text for products section */
+}
+
+.products table {
+    margin: auto;                       /* Centers the table on the page */
+    width: 800px;                       /* Fixed table width */
+    border-collapse: collapse;          /* Removes double borders between table cells */
+}
+
+.products td {
+    padding: 10px;                      /* Adds inner spacing inside each table cell */
+}
+
+.products img {
+    width: 200px;                       /* Fixed image width in the products table */
+    height: 200px;                      /* Fixed image height — keeps all images uniform */
+    object-fit: cover;                  /* Crops image to fill the box without stretching */
+    border-radius: 8px;                 /* Rounds the corners of product images */
+}
+
+/* ===== Buttons ===== */
+button {
+    background: #8b0000;                /* Changed: deep blood-red — matches dark roses in the image */
+    color: #e8d5b7;                     /* Changed: bone/parchment text on button — matches the skull tone */
+    border: 1px solid #dc143c;          /* Added: crimson border for a defined, tattoo-style edge */
+    padding: 10px 18px;                 /* Inner spacing inside the button */
+    border-radius: 8px;                 /* Rounds button corners */
+    cursor: pointer;                    /* Shows hand cursor when hovering the button */
+    font-weight: bold;                  /* Bold button text */
+    font-family: 'Georgia', serif;      /* Added: matches the site font */
+    letter-spacing: 1px;               /* Added: slight spacing makes it feel more intentional */
+    text-transform: uppercase;          /* Added: uppercase matches the nav style */
+}
+
+button:hover {
+    background: #dc143c;                /* Brightens to full crimson red on hover */
+    box-shadow: 0 0 12px rgba(220, 20, 60, 0.5); /* Added: red glow effect on hover */
+}
+
+/* ===== Full Background Hero ===== */
+.home-hero {
+    height: 100vh;                      /* Full screen height for the hero section */
+    background-image: url("images/banner2.jpg"); /* Your tattoo background image */
+    background-size: cover;             /* Scales image to fill the entire area */
+    background-position: center;        /* Centers the image in the hero */
+    background-attachment: fixed;       /* Parallax scroll effect — image stays while page scrolls */
+    display: flex;                      /* Enables flexbox to center the overlay card */
+    justify-content: center;            /* Centers overlay horizontally */
+    align-items: center;                /* Centers overlay vertically */
+}
+
+.overlay {
+    background: rgba(0, 0, 0, 0.75);   /* Changed: slightly darker overlay for better text contrast */
+    padding: 60px 50px;                 /* Inner spacing around overlay content */
+    border-radius: 4px;                 /* Changed: sharper corners for a gothic/raw feel */
+    text-align: center;                 /* Centers text inside the overlay */
+    border: 1px solid rgba(139, 0, 0, 0.6); /* Changed: dark blood-red border matches the image */
+    max-width: 600px;                   /* Limits overlay width so it doesn't stretch too wide */
+    box-shadow: 0 0 40px rgba(139, 0, 0, 0.3); /* Added: dark red outer glow around the card */
+}
+
+.overlay h1 {
+    font-size: 70px;                    /* Large display heading size */
+    letter-spacing: 6px;                /* Wide spacing gives it a dramatic, gothic look */
+    margin-bottom: 20px;                /* Space below heading before the paragraph */
+    color: #e8d5b7;                     /* Changed: bone tone matches the skull in the image */
+    text-shadow: 0 0 25px rgba(139, 0, 0, 0.8); /* Changed: deeper red glow on the title */
+    font-family: 'Georgia', serif;      /* Serif font for the main heading */
+}
+
+.overlay p {
+    font-size: 18px;                    /* Body text size inside the overlay */
+    color: #c9b99a;                     /* Changed: slightly darker parchment for paragraph text */
+    line-height: 1.7;                   /* Generous line height for readability */
+    margin-bottom: 30px;                /* Space below paragraph before the button */
+}
+
+.overlay a {
+    text-decoration: none;              /* Removes underline from the button link */
+}
+
+.overlay button {
+    font-size: 16px;                    /* Button text size */
+    padding: 14px 36px;                 /* Generous button padding */
+    border-radius: 4px;                 /* Changed: sharper to match overlay corners */
+    letter-spacing: 2px;               /* Changed: wider spacing for a bold gothic feel */
+    text-transform: uppercase;          /* Uppercase button text */
+}
+
+/* ===== About Page ===== */
+.about-container {
+    display: flex;                      /* Side-by-side layout for image and text */
+    flex-direction: row-reverse;        /* Image on right, text on left */
+    align-items: flex-start;            /* Aligns items to the top */
+    justify-content: center;            /* Centers the layout on the page */
+    gap: 40px;                          /* Space between image and text */
+    max-width: 1000px;                  /* Limits total width */
+    margin: 80px auto;                  /* Centers container with top/bottom spacing */
+    padding: 0 20px;                    /* Side padding so content doesn't touch edges */
+    flex-wrap: wrap;                    /* Wraps to column on smaller screens */
+}
+
+.about-image img {
+    width: 420px;                       /* Larger image size as requested */
+    height: 420px;                      /* Keeps it square */
+    object-fit: cover;                  /* Crops to fill without stretching */
+    border-radius: 4px;                 /* Changed: sharper corners for gothic feel */
+    border: 3px solid #8b0000;          /* Changed: dark blood-red border matches image theme */
+    transition: transform 0.3s ease;    /* Smooth animation on hover */
+    box-shadow: 0 0 20px rgba(139, 0, 0, 0.4); /* Added: red glow around profile image */
+}
+
+.about-image img:hover {
+    transform: scale(1.05);             /* Slightly enlarges image on hover */
+}
+
+.about-text h1 {
+    font-size: 40px;                    /* Large heading for "About Me" */
+    letter-spacing: 2px;                /* Slight spacing for style */
+    margin-bottom: 20px;                /* Space below heading */
+    color: #e8d5b7;                     /* Changed: bone tone matches the skull theme */
+    text-shadow: 0 0 15px rgba(139, 0, 0, 0.5); /* Added: subtle red glow on heading */
+}
+
+.about-text p {
+    font-size: 18px;                    /* Body text size */
+    color: #c9b99a;                     /* Changed: parchment tone for paragraph text */
+    line-height: 1.6;                   /* Good line spacing for readability */
+    margin-bottom: 15px;                /* Space between paragraphs */
+}
+
+.about-address {
+    margin-top: 20px;                   /* Space above the address box */
+    background: rgba(139, 0, 0, 0.15); /* Changed: dark red tint matches blood/rose theme */
+    padding: 15px;                      /* Inner spacing inside the address box */
+    border-radius: 4px;                 /* Changed: sharper corners */
+    border: 1px solid rgba(139, 0, 0, 0.3); /* Added: subtle dark red border */
+}
+
+.about-address h2 {
+    font-size: 24px;                    /* Subheading size for "Contact / Address" */
+    margin-bottom: 10px;                /* Space below subheading */
+    color: #e8d5b7;                     /* Changed: bone tone for subheading */
+    letter-spacing: 1px;               /* Added: slight spacing */
+}
+
+.about-address p {
+    font-size: 16px;                    /* Smaller text for address details */
+    margin: 3px 0;                      /* Tight spacing between address lines */
+}
+
+.about-address a {
+    color: #dc143c;                     /* Crimson red for clickable links */
+    text-decoration: none;              /* No underline by default */
+}
+
+.about-address a:hover {
+    text-decoration: underline;         /* Underline appears on hover */
+    color: #ff4d6d;                     /* Added: slightly brighter red on hover */
+}
+
+/* ===== Responsive ===== */
+@media (max-width: 800px) {
+    .about-container {
+        flex-direction: column;         /* Stacks image and text vertically on small screens */
+        align-items: center;            /* Centers both on mobile */
+    }
+
+    .about-image img {
+        width: 200px;                   /* Smaller image on mobile */
+        height: 200px;                  /* Keeps it square on mobile */
+        margin-bottom: 20px;            /* Space below image before text */
+    }
+}

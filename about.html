@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>About — Humphrey Ian G. Pacaña</title>
+  <link rel="stylesheet" href="styles.css" />
+  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700;900&family=DM+Sans:wght@300;400;500;600&display=swap" rel="stylesheet"/>
+</head>
+<body>
+
+  <nav class="navbar">
+    <a href="index.html" class="logo">Humphrey <span>Ian G. Pacaña</span></a>
+    <ul class="nav-links">
+      <li><a href="about.html" class="active">About</a></li>
+      <li><a href="education.html">Education</a></li>
+      <li><a href="portfolio.html">Portfolio</a></li>
+      <li><a href="contact.html">Contact</a></li>
+    </ul>
+    <button class="hamburger" onclick="toggleNav()">☰</button>
+  </nav>
+
+  <section class="page-hero">
+    <div class="page-hero-content">
+      <h1>About <span class="accent">Me</span></h1>
+      <div class="underline-accent"></div>
+    </div>
+  </section>
+
+  <section class="about-section">
+    <div class="about-grid">
+      <div class="about-text">
+        <p class="about-lead">I am a Computer Science student at Cebu Institute of Technology – University with a strong passion for technology and problem-solving.</p>
+        <p>My interest in this field started when I was in senior high school, where I found myself unsure about which path to take. While reflecting on my interests, I remembered how I used to create games on Roblox — an experience that sparked my curiosity for programming and building interactive systems.</p>
+        <p>That realization led me to pursue Computer Science, where I can turn my creativity and logical thinking into practical skills. Currently, I am focused on improving my knowledge in programming and software development, while continuously exploring new technologies and areas within the tech industry.</p>
+        <p>I enjoy learning by doing — whether it's through academic projects or personal experiments — and I am always looking for ways to grow as a developer. My goal is to build meaningful and efficient solutions while continuously improving my skills and understanding of technology.</p>
+        <blockquote class="scripture">
+          <p>"if it's meant to be, then it will be"</p>
+          <cite>— Ethel Cain</cite>
+        </blockquote>
+      </div>
+      <div class="about-photo-area">
+        <div class="slideshow" onclick="openLightbox()">
+          <img src="images/photo.jpg"  alt="Humphrey Ian G. Pacaña" class="slide active" />
+          <img src="images/photo2.jpg" alt="Humphrey Ian G. Pacaña" class="slide" />
+          <div class="slide-dots">
+            <span class="dot active" onclick="event.stopPropagation(); goToSlide(0)"></span>
+            <span class="dot"        onclick="event.stopPropagation(); goToSlide(1)"></span>
+          </div>
+        </div>
+
+        <!-- Lightbox -->
+        <div id="lightbox" class="lightbox" onclick="closeLightbox()">
+          <span class="lightbox-close">✕</span>
+          <img id="lightbox-img" src="images/photo.jpg" alt="Humphrey Ian G. Pacaña" class="lightbox-img" />
+        </div>
+        <div class="about-tags">
+          <span class="tag">CS Student</span>
+          <span class="tag">CIT-U</span>
+          <span class="tag">Cebu City</span>
+          <span class="tag">Tech Enthusiast</span>
+          <span class="tag">Roblox Dev</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <p>© 2025 Humphrey Ian G. Pacaña · Built with passion</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
