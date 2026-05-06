@@ -1,4 +1,23 @@
-// Slideshow
+// Day / Night mode
+function toggleTheme() {
+  const isDark = !document.body.classList.contains('day-mode');
+  document.body.classList.toggle('day-mode');
+  const btn = document.querySelector('.theme-toggle');
+  if (btn) btn.textContent = isDark ? '🌙' : '☀️';
+  localStorage.setItem('theme', isDark ? 'day' : 'night');
+}
+
+// Apply saved theme on load
+(function () {
+  const saved = localStorage.getItem('theme');
+  if (saved === 'day') {
+    document.body.classList.add('day-mode');
+    const btn = document.querySelector('.theme-toggle');
+    if (btn) btn.textContent = '🌙';
+  }
+})();
+
+
 const slides = document.querySelectorAll('.slide');
 const dots   = document.querySelectorAll('.dot');
 const photos = ['images/photo.jpg', 'images/photo2.jpg'];

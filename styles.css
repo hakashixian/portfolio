@@ -902,7 +902,106 @@ body {
   to   { opacity: 1; transform: translateY(0); }
 }
 
-/* ===== PORT STUFF (kept for compatibility) ===== */
+/* ===== DAY MODE ===== */
+body.day-mode {
+  --black:      #f5f0eb;
+  --text:       #1a1a1a;
+  --text-muted: #5a4a4a;
+  --bg:         #fffaf9;
+  --bg-soft:    #fff0ee;
+  --border:     #f0cccf;
+}
+
+body.day-mode .navbar {
+  background: #ffffff;
+  border-bottom: 3px solid var(--red);
+  box-shadow: 0 2px 20px rgba(192, 32, 42, 0.15);
+}
+
+body.day-mode .logo { color: var(--red-dark); }
+body.day-mode .logo span { color: var(--red); }
+
+body.day-mode .nav-links a { color: #444; }
+body.day-mode .nav-links a:hover,
+body.day-mode .nav-links a.active { color: var(--red-dark); }
+
+body.day-mode .hamburger { color: var(--text); }
+
+body.day-mode .hero {
+  background: linear-gradient(135deg, #fff0ee 0%, #ffe4e4 100%);
+}
+
+body.day-mode .hero::after { color: rgba(192,32,42,0.06); }
+
+body.day-mode .hero-eyebrow { color: var(--red); }
+body.day-mode .hero-title { color: var(--black); }
+body.day-mode .hero-title,
+body.day-mode .hero-subtitle,
+body.day-mode .hero-desc,
+body.day-mode .hero-eyebrow { color: var(--text); }
+body.day-mode .hero-title .accent { color: var(--red); }
+body.day-mode .hero-subtitle { color: #444; }
+body.day-mode .hero-desc { color: #555; }
+
+body.day-mode .btn-outline {
+  color: var(--red-dark);
+  border-color: var(--red);
+}
+body.day-mode .btn-outline:hover {
+  background: var(--red-light);
+}
+
+body.day-mode .card-inner {
+  background: var(--red);
+}
+
+body.day-mode .quick-nav { background: var(--red); }
+
+body.day-mode .page-hero {
+  background: linear-gradient(135deg, #fff0ee, #ffd5d5);
+  border-bottom: 3px solid var(--red);
+}
+
+body.day-mode .page-hero-content h1 { color: var(--text); }
+body.day-mode .page-hero-sub { color: #666; }
+
+body.day-mode .footer {
+  background: #f0e0e0;
+  color: #666;
+  border-top: 3px solid var(--red);
+}
+
+body.day-mode .nav-links {
+  background: #ffffff;
+}
+
+/* ===== THEME TOGGLE BUTTON ===== */
+.theme-toggle {
+  background: none;
+  border: 2px solid rgba(255,255,255,0.3);
+  border-radius: 100px;
+  font-size: 1.1rem;
+  cursor: pointer;
+  padding: 0.3rem 0.6rem;
+  transition: all 0.2s;
+  line-height: 1;
+}
+
+.theme-toggle:hover {
+  background: rgba(255,255,255,0.1);
+  border-color: rgba(255,255,255,0.6);
+}
+
+body.day-mode .theme-toggle {
+  border-color: rgba(192,32,42,0.3);
+}
+
+body.day-mode .theme-toggle:hover {
+  background: var(--red-light);
+  border-color: var(--red);
+}
+
+
 .port-thumb { height: 200px; position: relative; display: flex; align-items: flex-end; padding: 1rem; }
 .port-thumb-1 { background: linear-gradient(135deg, var(--red-dark), var(--red)); }
 .port-thumb-2 { background: linear-gradient(135deg, #1a1a1a, #444); }
